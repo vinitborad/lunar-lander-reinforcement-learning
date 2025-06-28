@@ -46,10 +46,10 @@ ehthumbs.db
 Thumbs.db
 
 # Data files
-*.h5
-*.pkl
-*.npy
-*.npz
+# *.h5
+# *.pkl
+# *.npy
+# *.npz
 
 # Logs
 logs/
