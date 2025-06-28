@@ -74,7 +74,6 @@ To break the strong temporal correlation between consecutive experiences, the ag
 
 ### Target Network
 A second, separate "target" network is used to generate the target Q-values for the loss calculation. The weights of this target network are periodically and slowly updated with the weights of the main Q-network. This creates a more stable target, preventing oscillations and divergence during training.
-- **Update Frequency:** A learning update is performed every `4` time steps.
 
 ## Model Architecture
 
@@ -92,9 +91,8 @@ Both the Q-Network and the Target Network share the same architecture, built usi
 ## Results
 
 ### Training Performance
-The agent was trained for up to 2000 episodes. The training progress was monitored by plotting the total points per episode and the moving average over the last 100 episodes. The agent successfully learned to solve the environment, consistently achieving an average score above 200 points.
+The agent was trained for up to 700 episodes. The training progress was monitored by plotting the total points per episode and the moving average over the last 100 episodes. The agent successfully learned to solve the environment, consistently achieving an average score above 200 points.
 
-*(You can replace the image below with a screenshot of your actual training plot)*
 ![Training Progress](./outputs/training_results.png)
 
 ### The Trained Agent in Action
