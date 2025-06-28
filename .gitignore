@@ -26,6 +26,7 @@ var/
 
 # Virtual Environment
 venv/
+venv_lunar_lander/
 ENV/
 env/
 
